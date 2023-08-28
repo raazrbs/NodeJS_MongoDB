@@ -82,7 +82,7 @@ app.delete('/products/:id', async(req, res) =>{
 
 mongoose.set("strictQuery", false)
 mongoose.
-connect('mongodb+srv://raazdba:raaz12345@cluster0.8y5agex.mongodb.net/?retryWrites=true&w=majority')
+connect('mongodb+srv://raazdba:<yourpwd>@cluster0.8y5agex.mongodb.net/?retryWrites=true&w=majority')
 .then(() => {
     console.log('connected to MongoDB')
     app.listen(3000, ()=> {
